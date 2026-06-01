@@ -5,3 +5,5 @@ public class Multiply {
         return a * b;
     }
 }
+
+// TODO: вернуть произведение a и b

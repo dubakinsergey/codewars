@@ -5,3 +5,5 @@ public class EvenOrOdd {
         return number % 2 == 0 ? "Even" : "Odd";
     }
 }
+
+// TODO: вернуть "Even" если число чётное, "Odd" если нечётное
