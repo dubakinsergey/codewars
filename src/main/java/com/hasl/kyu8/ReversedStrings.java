@@ -2,7 +2,7 @@ package com.hasl.kyu8;
 
 public class ReversedStrings {
     public static String reverse(String str) {
-        // TODO: вернуть перевёрнутую строку
-        return "";
+        StringBuilder stringBuilder = new StringBuilder(str);
+        return stringBuilder.reverse().toString();
     }
 }
