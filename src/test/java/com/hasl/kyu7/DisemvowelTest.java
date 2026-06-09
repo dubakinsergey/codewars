@@ -8,10 +8,10 @@ public class DisemvowelTest {
 
     @Test
     public void testRemoveVowels() {
-        assertThat(Disemvowel.removeVowels("This website is for losers LOL!"))
+        assertThat(Disemvowel.removeVowelRegular("This website is for losers LOL!"))
                 .isEqualTo("Ths wbst s fr lsrs LL!");
-        assertThat(Disemvowel.removeVowels("No offense but, your writing is among the worst I've ever read"))
+        assertThat(Disemvowel.removeVowelRegular("No offense but, your writing is among the worst I've ever read"))
                 .isEqualTo("N ffns bt, yr wrtng s mng th wrst 'v vr rd");
-        assertThat(Disemvowel.removeVowels("aAeEiIoOuU")).isEmpty();
+        assertThat(Disemvowel.removeVowelRegular("aAeEiIoOuU")).isEmpty();
     }
 }
