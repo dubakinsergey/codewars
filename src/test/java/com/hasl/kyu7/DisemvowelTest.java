@@ -14,4 +14,13 @@ public class DisemvowelTest {
                 .isEqualTo("N ffns bt, yr wrtng s mng th wrst 'v vr rd");
         assertThat(Disemvowel.removeVowelRegular("aAeEiIoOuU")).isEmpty();
     }
+
+    @Test
+    public void testRemoveVowelsManual() {
+        assertThat(Disemvowel.removeVowelManual("This website is for losers LOL!"))
+                .isEqualTo("Ths wbst s fr lsrs LL!");
+        assertThat(Disemvowel.removeVowelManual("No offense but, your writing is among the worst I've ever read"))
+                .isEqualTo("N ffns bt, yr wrtng s mng th wrst 'v vr rd");
+        assertThat(Disemvowel.removeVowelManual("aAeEiIoOuU")).isEmpty();
+    }
 }
