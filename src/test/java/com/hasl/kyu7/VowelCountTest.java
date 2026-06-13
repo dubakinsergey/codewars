@@ -13,5 +13,11 @@ public class VowelCountTest {
         assertThat(VowelCount.getCountByValueOf("bcdfg")).isZero();
         assertThat(VowelCount.getCountByValueOf("aeiou")).isEqualTo(5);
         assertThat(VowelCount.getCountByValueOf("AEIOU")).isEqualTo(5);
+
+        assertThat(VowelCount.getCount("abracadabra")).isEqualTo(5);
+        assertThat(VowelCount.getCount("")).isZero();
+        assertThat(VowelCount.getCount("bcdfg")).isZero();
+        assertThat(VowelCount.getCount("aeiou")).isEqualTo(5);
+        assertThat(VowelCount.getCount("AEIOU")).isEqualTo(5);
     }
 }
