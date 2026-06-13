@@ -14,5 +14,12 @@ public class ExesOhsTest {
         assertThat(ExesOhs.getXO("Oo")).isFalse();
         assertThat(ExesOhs.getXO("ooom")).isFalse();
         assertThat(ExesOhs.getXO("")).isTrue();
+
+        assertThat(ExesOhs.getXOBalance("xo")).isTrue();
+        assertThat(ExesOhs.getXOBalance("xxOo")).isTrue();
+        assertThat(ExesOhs.getXOBalance("xxxm")).isFalse();
+        assertThat(ExesOhs.getXOBalance("Oo")).isFalse();
+        assertThat(ExesOhs.getXOBalance("ooom")).isFalse();
+        assertThat(ExesOhs.getXOBalance("")).isTrue();
     }
 }

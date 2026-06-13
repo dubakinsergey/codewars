@@ -17,6 +17,17 @@ public class ExesOhs {
         }
         return xCount == oCount;
     }
+
+    public static boolean getXOBalance(String str) {
+
+        int balance = 0;
+
+        for (char el : str.toLowerCase().toCharArray()) {
+            if (el == 'x') balance++;
+            if (el == 'o') balance--;
+        }
+        return balance == 0;
+    }
 }
 
 // "xo" → true
