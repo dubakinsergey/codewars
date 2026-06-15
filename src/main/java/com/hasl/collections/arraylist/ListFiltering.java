@@ -15,6 +15,18 @@ public class ListFiltering {
         }
         return result;
     }
+
+    public static List<Integer> filterIntegersForEach(List<Object> list) {
+
+        List<Integer> result = new ArrayList<>();
+
+        for (Object el : list) {
+            if (el instanceof Integer) {
+                result.add((Integer) el);
+            }
+        }
+        return result;
+    }
 }
 
 // ["a", 1, "b", 2, 3] → [1, 2, 3]
