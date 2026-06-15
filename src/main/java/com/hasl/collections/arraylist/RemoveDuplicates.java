@@ -17,6 +17,18 @@ public class RemoveDuplicates {
         }
         return result;
     }
+
+    public static List<Integer> removeDuplicatesForEach(List<Integer> list) {
+
+        List<Integer> result = new ArrayList<>();
+
+        for (Integer el : list) {
+            if (!result.contains(el)) {
+                result.add(el);
+            }
+        }
+        return result;
+    }
 }
 
 // [1, 2, 2, 3, 3, 3] → [1, 2, 3]
