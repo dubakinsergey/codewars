@@ -14,6 +14,16 @@ public class UniqueNumbers {
         }
         return set.size();
     }
+
+    public static int countUniqueForEach(List<Integer> numbers) {
+
+        Set<Integer> set = new HashSet<>();
+
+        for (Integer el : numbers) {
+            set.add(el);
+        }
+        return set.size();
+    }
 }
 
 // [1, 2, 2, 3, 3, 3] → 3
