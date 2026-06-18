@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FindTheOddInt {
-    public static int findOdd(List<Integer> numbers) {
+public class FindTheEvenInt {
+    public static int findEven(List<Integer> numbers) {
 
         Map<Integer, Integer> map = new HashMap<>();
 
@@ -14,13 +14,12 @@ public class FindTheOddInt {
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() % 2 == 1) {
-                return entry.getKey();
+            if (entry.getValue() % 2 == 0) {
+                return entry.getKey(); // ← возвращаем число, а не частоту
             }
         }
         return 0;
     }
 }
 
-// [1, 2, 2, 3, 3, 3, 4, 4, 4, 4] → 3
-// Найти число, которое встречается нечётное количество раз
+// [1, 2, 2, 3, 3, 3, 4, 4, 4, 4] → 2
