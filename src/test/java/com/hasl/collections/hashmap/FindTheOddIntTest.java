@@ -10,8 +10,8 @@ public class FindTheOddIntTest {
 
     @Test
     public void testFindOdd() {
-        assertThat(FindTheOddInt.findOdd(List.of(1, 2, 2, 3, 3, 3, 4, 4, 4, 4))).isEqualTo(3);
-        assertThat(FindTheOddInt.findOdd(List.of(1, 1, 2))).isEqualTo(2);
+        assertThat(FindTheOddInt.findOdd(List.of(1, 1, 2))).isEqualTo(2); // 2 встречается 1 раз → нечётное
         assertThat(FindTheOddInt.findOdd(List.of(0))).isZero();
+        assertThat(FindTheOddInt.findOdd(List.of(1, 2, 2, 3, 3, 3, 3))).isEqualTo(1); // только 1 нечётное
     }
 }
