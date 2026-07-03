@@ -4,7 +4,10 @@ import java.util.List;
 
 public class SumNumbers {
     public static int sum(List<Integer> numbers) {
-        // [1, 2, 3, 4] → 10
-        return 0;
+        return numbers.stream()
+                .mapToInt(el -> el)
+                .sum();
     }
 }
+
+// [1, 2, 3, 4] → 10
